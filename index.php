@@ -1,6 +1,100 @@
 <?php $data["title"] = "Trang chủ"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<!--Visao-->
+<div class="uk-section home__visao uk-light">
+    <div class="uk-container">
+        <div class="uk-margin-medium uk-text-center">
+            <h2 class="uk-h2 home__tuyensinh__title">
+                VÌ SAO 20.000 SINH VIÊN CHỌN ĐẠI HỌC FPT?
+            </h2>
+            <div class="home__tuyensinh__desc">Trường đại học FPT là môi trường tạo điều kiện thuận lợi nhất để sinh viên phát triển năng
+                <br class="uk-visible@m"> lực cạnh tranh toàn cầu.</div>
+        </div>
+        <div class="uk-margin-medium-top">
+            <div uk-slider>
+
+                <div class="uk-position-relative">
+
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-30-m" uk-grid>
+                            <?php
+                            $data = array(
+                                array(
+                                    'src' => 'images/1x/vs1.png',
+                                    'txt1' => 'CHẤT LƯỢNG ĐÀO TẠO QUỐC TẾ',
+                                    'desc' => 'Đại học FPT là trường đầu tiên được xếp hạng Ba Sao theo chuẩn quốc tế QS Stars của các trường đại học trên thế giới (2012), sánh ngang với các trường đại học danh tiếng như Đại học London South Bank (Anh), Đại học Lobachesky (Nga)...',
+                                ),
+                                array(
+                                    'src' => 'images/1x/vs2.png',
+                                    'txt1' => 'ĐÀO TẠO THEO NHU CẦU DOANH NGHIỆP',
+                                    'desc' => 'Chương trình đào tạo của Đại học FPT được xây dựng với sự tham gia hỗ trợ, tư vấn của các chuyên gia hàng đầu từ các công ty thành viên và đối tác của Tập đoàn FPT.',
+                                ),
+                                array(
+                                    'src' => 'images/1x/vs3.png',
+                                    'txt1' => 'CƠ HỘI LÀM VIỆC TOÀN CẦU',
+                                    'desc' => 'Trường Đại học FPT luôn chú trọng cung cấp cho sinh viên những hành trang vững vàng của một công dân toàn cầu: kỹ năng giao tiếp, trình độ ngoại ngữ, tham gia học kỳ trao đổi tại nước ngoài, cơ hội thực tập và làm việc tại nhiều quốc gia trên thế giới …',
+                                ),
+
+                                array(
+                                    'src' => 'images/1x/vs4.png',
+                                    'txt1' => 'CƠ SỞ VẬT CHẤT HIỆN ĐẠI VỚI KHÔNG GIAN HỌC XANH',
+                                    'desc' => 'Đại học FPT được xây dựng trên một không gian rộng lớn, tạo ra một môi trường giáo dục hiện đại, kết hợp hài hòa giữa cảnh quan thiên nhiên, thân thiện với môi trường. Trường như một đô thị thu nhỏ với đầy đủ mọi thứ giúp sinh viên có thể tập trung cho hoạt động học tập cũng như có nhiều trải nghiệm với cuộc sống tập thể, tự lập.',
+                                ),
+                                array(
+                                    'src' => 'images/1x/vs5.png',
+                                    'txt1' => 'DỊCH VỤ HỖ TRỢSINH VIÊN"CHUẨN 5 SAO"',
+                                    'desc' => 'Sinh viên Đại học FPT được chú trọng phát triển kỹ năng mềm ngay trong tuần nhập học đầu tiên. Trường cũng thường xuyên tổ chức chương trình sinh hoạt định hướng để cung cấp cho các tân binh những kỹ năng học tập ở bậc đại học. Những chương trình này không chỉ giúp sinh viên học tập hiệu quả ở bậc đại học mà còn giúp các bạn tiến xa hơn trên lộ trình sự nghiệp sau này.',
+                                ),
+                                array(
+                                    'src' => 'images/1x/vs6.png',
+                                    'txt1' => 'MÔI TRƯỜNGQUỐC TẾTẠI SÂN NHÀ',
+                                    'desc' => 'Hiện có gần 100 sinh viên quốc tế theo học chương trình dài hạn và khoảng 300 lượt sinh viên ở 19 quốc gia trên thế giới như Mỹ, Nhật, Pháp, Thái Lan, Brunei, Hàn Quốc, Cameroon… đến trao đổi chương trình học tập ngắn hạn hoặc giao lưu văn hóa tại Đại học FPT.',
+                                ),
+                            );
+                            foreach ($data as $k=>$v): ?>
+                                <li class="uk-text-center">
+                                    <div class="home__visao__item">
+                                        <div class="uk-cover-container home__visao__boxImg uk-border-circle" data-src="<?= $v['src'] ?>" uk-img>
+                                            <canvas width="142" height="142"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="home__visao__item">
+                                        <h4 class="uk-h4 home__visao__title"><?= $v['txt1'] ?></h4>
+                                    </div>
+                                    <div class="home__visao__item">
+                                        <div class="home__visao__desc"><?= $v['desc'] ?></div>
+                                    </div>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
+                    <div class="uk-hidden@s uk-light">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small home__doingu__slidenav home__doingu__slidenav--prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small home__doingu__slidenav home__doingu__slidenav--next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden"></ul>
+
+            </div>
+        </div>
+        <div class="uk-margin-medium-top uk-text-center">
+            <div class="home__trainghiemth__boxBtn uk-position-relative uk-display-inline-block">
+                <button class="home__trainghiemth__btn uk-button uk-border-rounded uk-button-default"><span>ĐĂNG KÝ NGAY</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Visao-->
+
 <!--Chuyên ngành đào tạo-->
 <div class="home__chuyennganh uk-section-small uk-background-muted">
     <div class="uk-container">
