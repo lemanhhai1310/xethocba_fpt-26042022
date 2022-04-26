@@ -1,5 +1,64 @@
 /**
  * --------------------------------------------------------------------
+ * Gotham
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'iCiel Gotham Ultra';
+  font-display: auto;
+  src:local('iCiel Gotham Ultra'), url('fonts/Gotham-Ultra.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
+ * BeVietnamPro
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'Be Vietnam Pro Italic';
+  font-display: auto;
+  src:local('Be Vietnam Pro Italic'), url('fonts/BeVietnamPro-Italic.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Be Vietnam Pro Black';
+  font-display: auto;
+  src:local('Be Vietnam Pro Black'), url('fonts/BeVietnamPro-Black.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Be Vietnam Pro SemiBold';
+  font-display: auto;
+  src:local('Be Vietnam Pro SemiBold'), url('fonts/BeVietnamPro-SemiBold.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Be Vietnam Pro Bold';
+  font-display: auto;
+  src:local('Be Vietnam Pro Bold'), url('fonts/BeVietnamPro-Bold.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Be Vietnam Pro Regular';
+  font-display: auto;
+  src:local('Be Vietnam Pro Regular'), url('fonts/BeVietnamPro-Regular.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Be Vietnam Pro Medium';
+  font-display: auto;
+  src:local('Be Vietnam Pro Medium'), url('fonts/BeVietnamPro-Medium.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
  * Arial
  * --------------------------------------------------------------------
  */
