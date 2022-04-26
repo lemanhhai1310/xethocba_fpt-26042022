@@ -1,4 +1,22 @@
 .home{
+  &__block2{
+    min-height: 731px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    &__imgbg{
+      $x:165px;
+      bottom: calc(0px - #{$x});
+      left: calc(50% - #{$x});
+    }
+    .uk-section{
+      padding-top: 120px;
+      @include media-breakpoint-up('m'){
+        padding-top: 140px;
+      }
+    }
+  }
   &__block1{
     padding-top: 15px;
     @include media-breakpoint-up('m'){

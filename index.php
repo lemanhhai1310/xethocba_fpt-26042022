@@ -2,6 +2,56 @@
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <!---->
+<div class="home__block2 uk-position-relative uk-flex uk-flex-middle" data-src="images/1x/bg1.png" uk-img>
+    <div class="uk-section uk-width-1-1">
+        <img class="uk-position-bottom-center home__block2__imgbg uk-visible@m" src="images/1x/bg2.png" alt="">
+        <div class="uk-container uk-position-relative uk-position-z-index">
+            <div uk-grid>
+                <div class="uk-width-expand uk-text-center">
+                    <div class="uk-margin">
+                        <img src="images/1x/xh1.png" alt="">
+                    </div>
+                    <div class="uk-margin-top">
+                        <a href=""><img src="images/1x/xh2.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <div class="uk-position-relative home__trainghiemth__box">
+                        <div class="home__trainghiemth__card uk-card uk-card-body uk-card-default uk-flex uk-flex-middle">
+                            <div class="uk-width-1-1">
+                                <div class="item__30">
+                                    <h3 class="uk-h3 uk-text-center home__trainghiemth__title">ĐĂNG KÝ TƯ VẤN</h3>
+                                </div>
+                                <div class="item__30">
+                                    <div class="item__15">
+                                        <input class="uk-input home__trainghiemth__input" type="text" placeholder="Họ và tên">
+                                    </div>
+                                    <div class="item__15">
+                                        <input class="uk-input home__trainghiemth__input" type="tel" placeholder="Điện thoại">
+                                    </div>
+                                    <div class="item__15">
+                                        <input class="uk-input home__trainghiemth__input" type="email" placeholder="Email">
+                                    </div>
+                                    <div class="item__15">
+                                        <input class="uk-input home__trainghiemth__input" type="text" placeholder="Tỉnh / Thành phố">
+                                    </div>
+                                </div>
+                                <div class="item__30 uk-text-center">
+                                    <div class="home__trainghiemth__boxBtn uk-position-relative uk-display-inline-block">
+                                        <button class="home__trainghiemth__btn uk-button uk-border-rounded uk-button-default"><span>ĐĂNG KÝ</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/-->
+
+<!---->
 <div class="home__block1">
     <div class="uk-container">
         <div class="uk-flex-middle" uk-grid>
