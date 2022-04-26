@@ -1,4 +1,11 @@
 .home{
+  &__block1{
+    padding-top: 15px;
+    @include media-breakpoint-up('m'){
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
   &__doingu{
     &__section{
 

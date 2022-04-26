@@ -1,6 +1,21 @@
 <?php $data["title"] = "Trang chủ"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<!---->
+<div class="home__block1">
+    <div class="uk-container">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+                <img src="images/1x/Asset10.png" alt="">
+            </div>
+            <div class="uk-width-auto@m">
+                <img src="images/1x/Asset11.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--/-->
+
 <!--Visao-->
 <div class="uk-section home__visao uk-light">
     <div class="uk-container">
