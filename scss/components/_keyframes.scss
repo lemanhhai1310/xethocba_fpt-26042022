@@ -1,0 +1,40 @@
+.slider-content-wrapper{
+  $x:140;
+  -webkit-animation: slide-jsx-3444987851 #{$x}s linear infinite;
+  animation: slide-jsx-3444987851 #{$x}s linear infinite;
+  @include media-breakpoint-up('m'){
+    $x:180;
+    -webkit-animation: slide-jsx-3444987851 #{$x}s linear infinite;
+    animation: slide-jsx-3444987851 #{$x}s linear infinite;
+  }
+  & > div{
+    display: inline-block;
+  }
+}
+@keyframes slide-jsx-3444987851 {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@-webkit-keyframes slide-jsx-3444987851 {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.slider-container{
+
+}

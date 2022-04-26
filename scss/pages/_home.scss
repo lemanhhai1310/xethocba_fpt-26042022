@@ -1,0 +1,90 @@
+.home{
+  &__tuyensinh{
+    min-height: 869px;
+  }
+  &__trainghiemth{
+    //min-height: 670px;
+    &__box{
+      &:before,&:after{
+        $x:113px;
+        content: "";
+        position: absolute;
+        width: #{$x};
+        height: #{$x};
+        background: #892003;
+        display: block;
+        z-index: 2;
+      }
+      $x:4px;
+      &:before{
+        top: #{$x};
+        left: #{$x};
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+      }
+      &:after{
+        bottom: #{$x};
+        right: #{$x};
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      }
+    }
+    &__card{
+      border-radius: 40px;
+      min-height: 450px;
+      @include media-breakpoint-up('m'){
+        min-height: 515px;
+      }
+      position: relative;
+      z-index: 3;
+      $x:100px;
+      clip-path: polygon(#{$x} 0, 100% 0, 100% calc(100% - #{$x}), calc(100% - #{$x}) 100%, 0 100%, 0 #{$x});
+    }
+    &__title{
+      font-family: $font-Verdana-Bold;
+      color: #E77126;
+      @extend .fz-20;
+      line-height: (24/20);
+      margin: 0 !important;
+    }
+    &__input{
+      color: #666666;
+      @extend .fz-16;
+      border-color: #666666;
+    }
+    &__boxBtn{
+      &:before,&:after{
+        $x:15px;
+        content: "";
+        position: absolute;
+        width: #{$x};
+        height: #{$x};
+        background: #892003;
+        display: block;
+        z-index: 2;
+      }
+      $x:1px;
+      &:before{
+        top: #{$x};
+        left: #{$x};
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+      }
+      &:after{
+        bottom: #{$x};
+        right: #{$x};
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      }
+    }
+    &__btn{
+      background: #E77126;
+      border-color: #E77126;
+      color: #ffffff;
+      position: relative;
+      z-index: 3;
+      $x:15px;
+      clip-path: polygon(#{$x} 0, 100% 0, 100% calc(100% - #{$x}), calc(100% - #{$x}) 100%, 0 100%, 0 #{$x});
+      span{
+        @extend .fz-18;
+        font-family: $font-Verdana;
+      }
+    }
+  }
+}
