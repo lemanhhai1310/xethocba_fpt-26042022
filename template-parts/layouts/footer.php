@@ -71,7 +71,7 @@
 </div>
 <script>
     setTimeout(()=>{
-        // UIkit.modal('#modal-close-outside').show();
+        UIkit.modal('#modal-close-outside').show();
     },5000);
 </script>
 </body>
