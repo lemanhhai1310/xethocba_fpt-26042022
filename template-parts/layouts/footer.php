@@ -39,5 +39,40 @@
 </div>
 </div>
 <!--/app-->
+<!-- This is the modal with the outside close button -->
+<div id="modal-close-outside" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body" style="width: 375px;">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <div class="uk-width-1-1">
+            <div class="item__30">
+                <h3 class="uk-h3 uk-text-center home__trainghiemth__title">ĐĂNG KÝ TƯ VẤN</h3>
+            </div>
+            <div class="item__30">
+                <div class="item__15">
+                    <input class="uk-input home__trainghiemth__input" type="text" placeholder="Họ và tên">
+                </div>
+                <div class="item__15">
+                    <input class="uk-input home__trainghiemth__input" type="tel" placeholder="Điện thoại">
+                </div>
+                <div class="item__15">
+                    <input class="uk-input home__trainghiemth__input" type="email" placeholder="Email">
+                </div>
+                <div class="item__15">
+                    <input class="uk-input home__trainghiemth__input" type="text" placeholder="Tỉnh / Thành phố">
+                </div>
+            </div>
+            <div class="item__30 uk-text-center">
+                <div class="home__trainghiemth__boxBtn uk-position-relative uk-display-inline-block">
+                    <button class="home__trainghiemth__btn uk-button uk-border-rounded uk-button-default"><span>ĐĂNG KÝ</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    setTimeout(()=>{
+        // UIkit.modal('#modal-close-outside').show();
+    },5000);
+</script>
 </body>
 </html>

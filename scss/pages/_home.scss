@@ -7,8 +7,10 @@
     overflow: hidden;
     &__imgbg{
       $x:165px;
+      $y:50px;
       bottom: calc(0px - #{$x});
-      left: calc(50% - #{$x});
+      left: calc(50% - #{$x} + #{$y});
+      height: 617px;
     }
     .uk-section{
       padding-top: 120px;
@@ -182,6 +184,19 @@
       color: #ffffff;
       @extend .fz-16;
       line-height: (19/16);
+    }
+    &__accordion{
+      .uk-accordion-title{
+        background: #D3D3D3;
+        border-radius: 10px 10px 0 0;
+        color: #1D1D1B;
+        font-family: $font-BeVietnamPro-SemiBold;
+        @extend .fz-18;
+        padding: 10px 15px;
+      }
+      .uk-accordion-content{
+        margin: 0 !important;
+      }
     }
   }
   &__trainghiemth{
